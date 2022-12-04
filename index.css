@@ -1,0 +1,25 @@
+* {
+    margin: 0%;
+}
+
+body {}
+
+form {
+    box-shadow: 13px 13px 43px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 13px 43px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 13px 43px -5px rgba(0, 0, 0, 0.75);
+    border-radius: 39px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 20px 20px 74px #a8a8a8,
+        -20px -20px 74px #ffffff;
+    margin: 20%;
+    background: url(./blob-scene-haikei\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: ;
+}
+input{
+    margin: 200px;
+    cursor: cell;
+}
