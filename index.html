@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62b7831ac8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 
-    <body>
-        <form action="">
-            <input type="text" name="username" placeholder="Username">
-        </form>
-         
+<body>
+    <img src="./logo-aroma-zone.svg" alt="logo-aroma-zone">
 
-    </body>
+
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" id="login">
+                    <input type="text" id="nom" class="login__input" placeholder="Titre :" required>
+                    <input type="text" id="marque" class="login__input" placeholder="Marque :" required>
+                    <input type="number" id="prix" class="login__input" placeholder="Prix :" required>
+                    <input type="date" id="date" class="login__input" placeholder="Date :" required>
+                    <select id="multiple-select" class="login__input" required>
+                        <option value=""></option>
+                        <option value="Hygiène et toilette">Hygiène et toilette</option>
+                        <option value="Soins esthétiques">Soins esthétiques</option>
+                        <option value="Produits solaires">Produits solaires</option>
+                        <option value="Beauté des mains et des pieds">Beauté des mains et des pieds</option>
+                        <option value="Produits de maquillage">Produits de maquillage</option>
+                        <option value="Entretien capillaires">Entretien capillaires</option>
+                        <option value="Parfums">Parfums</option>
+                    </select>
+
+                    <script
+                        src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+                    <label class="promotion">Promotion :<br><input type="radio" id="checkyes" name="check"
+                            value="Yes">Yes<input type="radio" id="checkno" name="check" value="No" >No</label>
+                    <button id="ajouter" class="button login__submit">Ajouter</button>
+                    <button onclick="edit()" id="modifier" class="button login__submit">Modifier</button>
+
+                </form>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+    </form>
+    <table id="table">
+        <tr>
+            <th>Nom</th>
+            <th>Marque</th>
+            <th>Prix</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Promotion</th>
+            <th>action</th>
+        </tr>
+       
+
+
+
+    </table>
+    <div id="popup">
+        <div class="red">supprimer</div>
+        Are you sure for that !
+        <button id="supprimer" onclick="deleterow(i) ">supprimer</button>
+        <button id="annuler" onclick="annuler()"> annuler</button>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
 
 </html>
